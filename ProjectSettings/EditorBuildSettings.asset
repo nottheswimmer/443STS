@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 5eef2d01c5bcf7843a5b5239deaa752b
   - enabled: 1
-    path: Assets/VoxelMaster/Examples/Voxel Master Generation.unity
-    guid: c1e5e4dd4e563b04d959c505f27b9912
+    path: Assets/Scenes/World.unity
+    guid: 2abe9596278692b4e99bc03d4da807de
   m_configObjects: {}

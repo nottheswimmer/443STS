@@ -54,8 +54,12 @@ namespace VoxelMaster
                 if (hit.collider != null)
                 {
                     Vector3 final = hit.point - (hit.normal * 0.5f);
-                    terrain.RemoveBlockAt(final);
-                    terrain.FastRefresh();
+                    var block = terrain.GetBlock(final);
+                    if (block.id != 4) // Don't break bedrock
+                    {
+                        terrain.RemoveBlockAt(final);
+                        terrain.FastRefresh();
+                    }
                 }
             }
             else if (Input.GetMouseButtonDown(1)) // Add stone block
